@@ -1,0 +1,376 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #555;
+  text-align: left;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  color: #ee3b00;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #ce3e0e;
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #ee3b00;
+  border-color: #ee3b00;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #ce3e0e;
+  border-color: #ce3e0e;
+}
+.btn-primary:focus, .btn-primary.focus {
+  color: #fff;
+  background-color: #ce3e0e;
+  border-color: #ce3e0e;
+  box-shadow: 0 0 0 0.2rem rgba(206, 62, 14, 0.5);
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #ce3e0e;
+  border-color: #ce3e0e;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #ce3e0e;
+  border-color: #ce3e0e;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(206, 62, 14, 0.5);
+}
+.btn-rounded {
+  border-radius: 100px;
+  padding: .3rem 1.5rem;
+  font-weight: 300;
+}
+.btn-transparent, .btn-transparent:hover, .btn-transparent:focus {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+
+/* Page Section */
+.page-section {
+  padding: 6rem 0;
+}
+.page-section h2.section-heading {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+.page-section h3.section-subheading {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 9rem 0;
+  }
+}
+
+.btn-social {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
+}
+
+/* Main Nav */
+
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #212529;
+}
+#mainNav .navbar-toggler {
+  padding: 0.75rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.75rem;
+  color: #fff;
+  border: 0;
+}
+#mainNav .navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+}
+#mainNav .navbar-brand img {
+  height: 1.5rem;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+  color: #a59b99;
+  letter-spacing: 0.0625em;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #fff;
+}
+#mainNav .navbar-flex {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    background-color: #171513;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand img {
+    transition: height 0.3s ease-in-out;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+  }
+  #mainNav.navbar-shrink .navbar-brand svg,
+  #mainNav.navbar-shrink .navbar-brand img {
+    height: 1.5rem;
+  }
+  #mainNav .navbar-nav .nav-item {
+    margin-right: 1.5rem;
+  }
+  #mainNav .navbar-flex {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+  }
+
+}
+
+/* Header */
+
+header.masthead {
+  height: 100vh;
+  min-height: 450px;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.masthead-contain {
+  width: 100%;
+}
+.masthead-subheading {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.masthead-contain a {
+  padding: 10px;
+  border: 1px solid #47433f;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.masthead-contain a .service-icon {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .masthead-contain {
+    width: 50%;
+    margin: auto;
+  }
+ .masthead-subheading {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 30px;
+  }
+  .masthead-contain a {
+    padding: 20px;
+    flex-direction: column;
+   }
+  .masthead-contain a .service-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+/* Testimonial */
+
+section#testimonial{
+  background-color: #f1f1f1;
+}
+
+section#testimonial .carousel {
+	margin: 50px auto;
+}
+section#testimonial .carousel .item {
+	overflow: hidden;
+  min-height: 120px;
+}
+
+section#testimonial .testimonial-card {
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+  padding: 15px;
+}
+section#testimonial .testimonial-card:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 0 15px;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  bottom: -15px;
+}
+section#testimonial .testimonial-card-detail {
+  display: flex;
+  margin-top: 30px;
+}
+section#testimonial .testimonial-avtar {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  margin-right: 15px;
+}
+
+section#testimonial .testimonial-avtar img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+section#testimonial .testimonial-avtar-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section#testimonial .testimonial-avtar-name h6 {
+  font-size: 1.20rem;
+  color: #212529;
+  margin-bottom: 10px;
+  line-height: 1rem;
+}
+section#testimonial .testimonial-avtar-name span {
+  font-size: 0.75rem;
+}
+section#testimonial .carousel .carousel-indicators {
+	bottom: -40px;
+}
+section#testimonial .carousel-indicators li, section#testimonial .carousel-indicators li.active {
+	width: 18px;
+  height: 18px;
+	border-radius: 50%;
+	margin: 1px 3px;
+}
+section#testimonial .carousel-indicators li {	
+    background: #e2e2e2;
+    border: 4px solid #fff;
+}
+section#testimonial .carousel-indicators li.active {
+	color: #fff;
+    background: #ee3b00;    
+    border: 5px double;    
+}
+
+/* Contact Us */
+section#contact {
+  background-color: #212529;
+  background-image: url("../assets/img/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section#contact form#contactForm .form-group {
+  margin-bottom: 1.5rem;
+}
+section#contact form#contactForm .form-group input,
+section#contact form#contactForm .form-group textarea {
+  padding: 0.75rem;
+}
+section#contact form#contactForm .form-group input.form-control {
+  height: auto;
+}
+section#contact form#contactForm .form-group-textarea {
+  height: 100%;
+}
+section#contact form#contactForm .form-group-textarea textarea {
+  height: 100%;
+  min-height: 10rem;
+  resize: none;
+}
+section#contact form#contactForm p.help-block {
+  margin: 0;
+}
+section#contact form#contactForm .form-control:focus {
+  border-color: #ee3b00;
+  box-shadow: none;
+}
+section#contact form#contactForm ::-webkit-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #47433f;
+}
+section#contact form#contactForm :-moz-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #47433f;
+}
+section#contact form#contactForm ::-moz-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #47433f;
+}
+section#contact form#contactForm :-ms-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #47433f;
+}
+
+/* Footer */
+.footer {
+  background-color: #171513;
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: 'Roboto', sans-serif;
+}
